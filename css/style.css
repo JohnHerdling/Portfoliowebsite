@@ -1,0 +1,396 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    padding: 0px 12px 0px 12px;
+}
+
+/*------ help class ------*/
+
+.standard-container {
+    max-width: 80%;
+    margin: 0 auto; 
+}
+
+.text-highlighted {
+    color: #e09e50;
+}
+
+.btn {
+    display: block;
+    font-size: 20px;
+    background-color: #2d3e4e;
+    color:#e8eceb;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 15px 15px 25px silver;
+    margin: 15px 0px;
+}
+
+.btn:hover {
+    background-color:#e09e50 ;
+    color: #e8eceb;   
+}
+
+.btn:active {
+    font-size: 150%;
+}
+
+.main-background-img {
+    background-image: linear-gradient(rgba(232,236,235,0.5), rgba(232,236,235,0.5)), url(../img/pexels-ron-lach-10526880.jpg);
+} 
+/* Ich habe zweimal den rgba gefiniert mit der gleichen Farbe. Macht das Sinn oder gibt eine einfachere Schreibweise. Gibt es eine gleich deckende Deckfarbe über das gesamte Bild?  */
+
+/*------ main navigation strip ------*/
+
+#main-nav {
+    background-color: #2d3e4e;
+    position: sticky;    
+    /* Warum funktioniert sticky nicht bei der Startseite? */
+    font-size: 25px;
+}
+
+#main-nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#main-nav h1 {
+    float: left;
+    color: #e09e50;
+    padding: 30px 30px;
+    font-size: 25px;
+}
+
+#main-nav a {
+    color: #e8eceb;
+}
+
+#main-nav ul {
+    float: right;
+    list-style: none;
+}
+
+#main-nav ul li {
+    float: left;
+}
+
+#main-nav ul li a {
+    display: block;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+#main-nav ul li a:hover{
+    background-color: #8cbdb9;
+    color: black;
+    
+}
+
+#main-nav ul li a.active-page {
+    background-color: #8cbdb9;
+    color: black;
+}
+
+/*------ welcome strip ------*/
+
+#welcome {
+    min-height: 500px;
+    /* background-image: linear-gradient(rgba(232,236,235,0.6),rgba(232,236,235,0.6)), url(../img/pexels-ron-lach-10526880.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#welcome:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#welcome .welcome-content {
+    float: right;
+    width: 70%;
+    color: black;
+    padding: 130px 50px;
+}
+
+#welcome .welcome-img {
+    float:left;
+    width: 30%;
+    padding-top: 40px;
+}
+
+#welcome .welcome-img img {
+    border-radius: 5%;
+    width: 100%;
+    height: 100%; 
+}
+
+#welcome .welcome-content h2 {
+    font-size: 40px;
+
+}
+
+/*------ about section ------*/
+
+#about {
+    background-color: rgba(140,189,185,0.5);
+    padding: 50px 50px;
+    height: 385px;
+}
+
+#about:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#about .about-content {
+    float: left;
+    width: 70%;
+    color: #2d3e4e;
+    padding: 20px;
+    line-height: 1.5em;
+}
+
+#about .about-content p {
+    padding: 0px;
+}
+
+#about .about-img span {
+    float: left;
+    font-size: 200px;
+    width: 30%;
+    text-align: center;
+    padding-top: 45px;
+}
+
+/* box-shadow nur am Rande eines Bild anwendbar oder auch im Bild selbst. Schatten des Objektes im Bild? */
+
+#about .about-img span:hover {
+    font-size:1500%;
+}
+
+/*------ skill section index page------*/
+
+#skills {
+    padding:40px 0px 40px 0px;
+    /* background-image: linear-gradient(rgba(232,236,235,0.6),rgba(232,236,235,0.6)), url(../img/pexels-ron-lach-10526880.jpg); */
+    background-attachment: fixed;
+    height: 200px;
+}
+
+#skills:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#skills .skill {
+    float:left;
+    width: 33.33%;
+    text-align: center;
+    padding:35px;
+}
+
+#skills .material-symbols-outlined {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #e09e50;
+}
+
+#skills .material-symbols-outlined:hover {
+    font-size: 400%;
+}
+
+/* ---- Skills page ------ */
+
+#skills-page {
+    background-color: rgba(140,189,185,0.5);
+    padding: 50px 50px 50px 50px ;
+    margin: 150px 0px 0px 0px;
+    height: auto;
+}
+
+#skills-page:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#skills-page h2 {
+    font-size: 40px;
+}
+
+#skills-page li {
+    font-size: 30px;
+}
+
+/* ----- softskill section -----  */
+
+/* Frage Elena: floate ich bei Bild und Text beides nach links oder eins nach links und das andere nach rechts?
+oder Flexbox Sinnvoll? */
+/* <main class="main-background-img">
+        <section id="skills-page">
+            <div class="standard-container">
+                <div class="softskill-section">
+                    <div class="softskill-page-content"> */
+
+.main-background-img #skills-page .standard-container  .softskill-section {
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+#skills-page .softskill-section .softskill-page-content {
+    float: left;
+    width: 50%;
+    border: 2px solid blue;
+}
+
+#skills-page .softskill-section .softskill-img span {
+    float: left;
+    font-size: 150px;
+    width: 50%;
+    text-align: center;
+    border: 2px solid yellow;
+}
+
+/* ----- hardskill-section ----- */
+
+.hardskill-section {
+    box-sizing: border-box;
+    padding: 35px;
+    border: 2px solid black;
+}
+
+#skills-page .hardskill-section .hardskill-img span {
+    float: left;
+    font-size: 150px;
+    width: 50%;
+    text-align: center;
+    border: 2px solid red;
+}
+
+#skills-page .hardskill-section .hardskill-page-content {
+    float: left;
+    width: 50%;
+    border: 2px solid green;
+}
+
+
+/*------ contact heading section ------*/
+
+#contact-heading {
+    min-height: 600px;
+    background-image: linear-gradient(rgba(232,236,235,0.5),rgba(232,236,235,0.5)), url(../img/pexels-ron-lach-10526880.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact-heading .heading-content {
+    color: black;
+    padding: 120px 0px;
+    width: 70%;
+    float: left;
+}
+
+#contact-heading .heading-content h2 {
+    font-size: 40px;
+}
+
+#contact-heading .heading-content p {
+    font-size: 20px;
+}
+#contact-heading .heading-img  {
+    border-radius: 5px; /* der border radius wird nicht angewandt > Warum?*/
+ 
+}
+
+#contact-heading .heading-img img {
+     /* der border radius wird nicht angewandt > Warum?*/
+    font-size: 10px;
+    float: left;
+    padding: 120px 0px;
+    width: 30%;
+    height: auto; 
+}  
+
+/*------ contact heading option ------*/
+
+#contact-options {
+    margin-top: -150px;
+    padding-bottom: 150px;
+}
+
+#contact-options .contact-option { 
+    float: left;
+    width: 40%;
+    margin: 0% 5% 0% 5%; /* Sicherheitsfrage: Sind die % Angaben so korrekt oder eher px Einheit? Wann benutze ich prinzipiell "auto"? */
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 35px;
+    background-color:#8cbdb9 ;
+    min-height: 300px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 45px silver;
+}
+
+#contact-options:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#contact-options .contact-option p {
+    color: black;
+    line-height: 1.7em;
+}
+
+#contact-options .material-symbols-outlined {
+    font-size: 60px;
+}
+
+/*------ footer section ------*/
+
+#main-footer {
+    background-color: #2d3e4e;
+    min-height: 120px;
+    padding: 20px;
+}
+
+#main-footer p {
+    text-align: center;
+    color: #e8eceb;
+}
+
+#main-footer p a {
+    color: #e8eceb;
+}
+
+/* Fragen an Elena: 
+    Wie passe ich meine Webside für Handyformat an?
+    Schatten funktioniert auf dem standard-container nicht (about Bereich) > Warum? box-shadow: 15px 15px 45px silver;
+    Impressions- und Datenschutzerklärungsseite erstellen? Sinnvoll auf meiner Portfolioseite? */
+    
