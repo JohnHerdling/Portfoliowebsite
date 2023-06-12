@@ -221,12 +221,17 @@ p {
     font-size: 400%;
 }
 
+/* --- --- */
+
+#background-img-area {
+    height: 200px;
+}
+
 /* ---- Skills page ------ */
 
 #skills-page {
     background-color: rgba(140,189,185,0.5);
     padding: 50px 50px 50px 50px ;
-    margin: 150px 0px 0px 0px;
     height: auto;
 }
 
@@ -254,7 +259,7 @@ oder Flexbox Sinnvoll? */
                 <div class="softskill-section">
                     <div class="softskill-page-content"> */
 
-.main-background-img #skills-page .standard-container  .softskill-section {
+/* .main-background-img #skills-page .standard-container  .softskill-section {
     padding: 20px;
     box-sizing: border-box;
     border: 2px solid white;
@@ -271,12 +276,14 @@ oder Flexbox Sinnvoll? */
     font-size: 150px;
     width: 50%;
     text-align: center;
-    border: 2px solid yellow;
-}
+    border: 2px solid yellow; 
+}*/
 
 /* ----- hardskill-section ----- */
 
-.hardskill-section {
+
+
+/* .hardskill-section {
     box-sizing: border-box;
     padding: 35px;
     border: 2px solid black;
@@ -293,9 +300,12 @@ oder Flexbox Sinnvoll? */
 #skills-page .hardskill-section .hardskill-page-content {
     float: left;
     width: 50%;
-    border: 2px solid green;
-}
+    border: 2px solid green; 
+}*/
 
+#skills-page .hardskills-table tr {
+    border: 1px solid black;
+}
 
 /*------ contact heading section ------*/
 
@@ -322,12 +332,11 @@ oder Flexbox Sinnvoll? */
     font-size: 20px;
 }
 #contact-heading .heading-img  {
-    border-radius: 5px; /* der border radius wird nicht angewandt > Warum?*/
+    border-radius: 5px;
  
 }
 
 #contact-heading .heading-img img {
-     /* der border radius wird nicht angewandt > Warum?*/
     font-size: 10px;
     float: left;
     padding: 120px 0px;
@@ -345,7 +354,7 @@ oder Flexbox Sinnvoll? */
 #contact-options .contact-option { 
     float: left;
     width: 40%;
-    margin: 0% 5% 0% 5%; /* Sicherheitsfrage: Sind die % Angaben so korrekt oder eher px Einheit? Wann benutze ich prinzipiell "auto"? */
+    margin: 0% 5% 0% 5%; 
     font-size: 20px;
     color: black;
     text-align: center;
