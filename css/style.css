@@ -221,9 +221,9 @@ p {
     font-size: 400%;
 }
 
-/* --- --- */
+/* --- space block--- */
 
-#background-img-area {
+#space-block {
     height: 200px;
 }
 
@@ -251,13 +251,17 @@ p {
 
 /* ----- softskill section -----  */
 
-/* Frage Elena: floate ich bei Bild und Text beides nach links oder eins nach links und das andere nach rechts?
-oder Flexbox Sinnvoll? */
-/* <main class="main-background-img">
-        <section id="skills-page">
-            <div class="standard-container">
-                <div class="softskill-section">
-                    <div class="softskill-page-content"> */
+table > tbody > tr > td{
+    border: 1px solid blue;
+}
+table > tbody > tr {
+    background-color:green;
+}
+
+#skills-page .standard-container .material-symbols-outlined {
+    font-size:100px;
+}
+
 
 /* .main-background-img #skills-page .standard-container  .softskill-section {
     padding: 20px;
