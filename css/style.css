@@ -221,41 +221,71 @@ p {
     font-size: 400%;
 }
 
-/* --- space block--- */
+/* --- space block skill page--- */
 
 #space-block {
     height: 200px;
 }
+
+/* --- project-page --- */
+
+#project-page {
+    background-color: rgba(140,189,185,0.5);
+    padding: 50px 50px 50px 50px ;
+    height: auto;
+    font-size: 50px;
+}
+
+#project-page .material-symbols-outlined {
+    font-size: 50px;
+}
+
 
 /* ---- Skills page ------ */
 
 #skills-page {
     background-color: rgba(140,189,185,0.5);
     padding: 50px 50px 50px 50px ;
-    height: auto;
+    height: 728px;
+    /* Wie height und width erstellen, dass Container sich nocht verschieben? */
 }
 
-table{
+table {
     font-size: 25px;
     text-align: center;
-    margin:auto
-    }
+    width: 1432px; 
+    /* Bei einer festgelegten width passen sich die Seiten nicht mehr automatisch dem Bildschirmfenster an. ? Was tun? */
+    /* margin:auto */
+}
+
+table h2 {
+    font-size: 50px;
+    color: #e09e50;
+}
+
+#skills-page table tbody tr td { 
+    width: 572.234px;
+    height: 58px;
+    /* Der Ansatz hier ist im p Tag die height und width klar festzulegen > funktionierte nicht.  */
+}
+
+#skills-page table tbody tr td p {
+    font-style: italic;
+}
+
+#skills-page table tbody tr td p:hover {
+    font-size: 30px;
+    font-weight: 700;
+} 
 
 /* ----- softskill section -----  */
 
-/* table > tbody > tr > td{
-    border: 1px solid blue;
-}
-table > tbody > tr {
-    background-color:green;
-} */
-
 table > tbody > tr > td {
-    padding: 25px;
+    padding: 25px 50px 25px 50px;
 }
 
 #skills-page .standard-container .material-symbols-outlined {
-    font-size:150px;
+    font-size:180px;
 }
 
 /* ----- hardskill-section ----- */
@@ -306,7 +336,7 @@ table > tbody > tr > td {
 
 #contact-options {
     margin-top: -150px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 #contact-options .contact-option { 
@@ -343,7 +373,7 @@ table > tbody > tr > td {
 
 #main-footer {
     background-color: #2d3e4e;
-    min-height: 120px;
+    min-height: 70px;
     padding: 20px;
 }
 
@@ -355,6 +385,33 @@ table > tbody > tr > td {
 #main-footer p a {
     color: #e8eceb;
 }
+
+/* --- imprint --- */
+
+#project-page p {
+    padding-bottom:50px;
+    font-size: 30px;
+}
+
+#project-page h1{
+    font-size: 80px;
+}
+
+#project-page h2{
+    font-size: 60px;
+}
+
+#project-page h3{
+    font-size: 40px;
+}
+
+#project-page .material-symbols-outlined {
+    font-size: 110px;
+}
+
+/* --- privacy_policy --- */
+
+
 
 /* Fragen an Elena: 
     Wie passe ich meine Webside für Handyformat an?
