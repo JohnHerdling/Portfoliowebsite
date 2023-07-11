@@ -247,15 +247,12 @@ p {
     background-color: rgba(140,189,185,0.5);
     padding: 50px 50px 50px 50px ;
     height: 728px;
-    /* Wie height und width erstellen, dass Container sich nocht verschieben? */
 }
 
 table {
     font-size: 25px;
     text-align: center;
     width: 1432px; 
-    /* Bei einer festgelegten width passen sich die Seiten nicht mehr automatisch dem Bildschirmfenster an. ? Was tun? */
-    /* margin:auto */
 }
 
 table h2 {
@@ -263,14 +260,12 @@ table h2 {
     color: #e09e50;
 }
 
-#skills-page table tbody tr td { 
-    width: 572.234px;
-    height: 58px;
-    /* Der Ansatz hier ist im p Tag die height und width klar festzulegen > funktionierte nicht.  */
-}
 
 #skills-page table tbody tr td p {
     font-style: italic;
+    height: 34px;
+    width: 700px;
+    height: 40px;
 }
 
 #skills-page table tbody tr td p:hover {
