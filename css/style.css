@@ -53,15 +53,14 @@ p {
 
 .main-background-img {
     background-image: linear-gradient(rgba(232,236,235,0.5), rgba(232,236,235,0.5)), url(../img/pexels-ron-lach-10526880.jpg);
-} 
-/* Ich habe zweimal den rgba gefiniert mit der gleichen Farbe. Macht das Sinn oder gibt eine einfachere Schreibweise. Gibt es eine gleich deckende Deckfarbe über das gesamte Bild?  */
+    height: 100%;
+}
 
 /*------ main navigation strip ------*/
 
 #main-nav {
     background-color: #2d3e4e;
     position: sticky;    
-    /* Warum funktioniert sticky nicht bei der Startseite? */
     font-size: 25px;
 }
 
@@ -112,7 +111,6 @@ p {
 
 #welcome {
     min-height: 500px;
-    /* background-image: linear-gradient(rgba(232,236,235,0.6),rgba(232,236,235,0.6)), url(../img/pexels-ron-lach-10526880.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -183,8 +181,6 @@ p {
     padding-top: 45px;
 }
 
-/* box-shadow nur am Rande eines Bild anwendbar oder auch im Bild selbst. Schatten des Objektes im Bild? */
-
 #about .about-img span:hover {
     font-size:1500%;
 }
@@ -193,7 +189,6 @@ p {
 
 #skills {
     padding:40px 0px 40px 0px;
-    /* background-image: linear-gradient(rgba(232,236,235,0.6),rgba(232,236,235,0.6)), url(../img/pexels-ron-lach-10526880.jpg); */
     background-attachment: fixed;
     height: 200px;
 }
@@ -232,7 +227,7 @@ p {
 #project-page {
     background-color: rgba(140,189,185,0.5);
     padding: 50px 50px 50px 50px ;
-    height: auto;
+    min-height: 100px;
     font-size: 50px;
 }
 
@@ -314,9 +309,9 @@ table > tbody > tr > td {
 #contact-heading .heading-content p {
     font-size: 20px;
 }
+
 #contact-heading .heading-img  {
     border-radius: 5px;
- 
 }
 
 #contact-heading .heading-img img {
@@ -354,7 +349,6 @@ table > tbody > tr > td {
     clear: both;
 }
 
-
 #contact-options .contact-option p {
     color: black;
     line-height: 1.7em;
@@ -368,7 +362,7 @@ table > tbody > tr > td {
 
 #main-footer {
     background-color: #2d3e4e;
-    min-height: 70px;
+    height: 70px;
     padding: 20px;
 }
 
@@ -406,10 +400,3 @@ table > tbody > tr > td {
 
 /* --- privacy_policy --- */
 
-
-
-/* Fragen an Elena: 
-    Wie passe ich meine Webside für Handyformat an?
-    Schatten funktioniert auf dem standard-container nicht (about Bereich) > Warum? box-shadow: 15px 15px 45px silver;
-    Impressions- und Datenschutzerklärungsseite erstellen? Sinnvoll auf meiner Portfolioseite? */
-    
